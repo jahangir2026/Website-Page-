@@ -1,0 +1,298 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation styles */
+header {
+    background: #333;
+    color: #fff;
+}
+
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #fff;
+    color: #333;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url(Pictures/hero\ section\ 5.webp); /* replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+
+    
+}
+
+.cta-button {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e64a19;
+}
+
+
+
+/* Products Section */
+
+.products {
+    text-align: center;
+  }
+  
+.product {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+.product img {
+    width: 200px;
+    height: 200px;
+  }
+  
+.product button {
+    background-color: #145ead;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.grid-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+.feature-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.feature-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.feature-text h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.feature-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+#service-center {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 1.2em;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Section */
+#about {
+    background-image: url(Pictures/hero\ section\ 5.webp);
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+}
